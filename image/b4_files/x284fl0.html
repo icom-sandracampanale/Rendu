@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<!-- saved from url=(0046)http://www.dailymotion.com/embed/video/x284fl0 -->
+<html class=" js flexbox flexboxlegacy no-touch postmessage hashchange rgba borderradius opacity video svg chrome no-firefox no-ua_mobile no-ua_tablet ua_desktop no-ua_tv no-ua_bot no-ua_windowsphone no-ua_windows8 no-ua_blackberry no-ua_google_preview_bot no-psvita sessionstorage flash no-hls video-inline utf8-play no-mobile no-tablet no-ios no-android"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+        <title>Les trucs auxquels on pense quand on court</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="user-scalable=no,initial-scale=1,maximum-scale=1">
+    <style>
+    html,
+body {
+    margin:0;
+    padding:0;
+    height: 100%;
+    width: 100%;
+}
+body
+{
+    background-color: #000;
+    color: #fff;
+    font-family: sans-serif;
+    overflow: hidden;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0); /* Disable hugly Android highlight */
+}
+
+/* Load error CSS */
+.load-error-container {
+    display: table;
+    height: 100%;
+    text-align: center;
+    width: 100%;
+}
+.load-error-content {
+    display: table-cell;
+    vertical-align: middle;
+}
+.load-error-content > h2 {
+    margin: 20px 10px;
+}
+.load-error-content > p {
+    margin: 0 30px;
+}
+/* END load error CSS */
+
+/* Loader related CSS*/
+
+/* both loaders */
+.loader
+{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 50%;
+  left: 50%;
+  margin-left: -25px;
+  margin-top: -25px;
+}
+
+/* animations boost : forces hardware acceleration by apply identity 3d transform */
+.force-transform {
+    -moz-transform: translate3d(0,0,0);
+    -ms-transform: translate3d(0,0,0);
+    -o-transform: translate3d(0,0,0);
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
+
+/* iOS Loader */
+.ios-loader .ios-loader-bar
+{
+  width: 10%;
+  height: 26%;
+  background: #fff;
+  position: absolute;
+  left: 44.5%;
+  top: 37%;
+
+  border-radius: 50px;
+  box-shadow: 0 0 3px rgba(0,0,0,0.2);
+  opacity: 0;
+}
+@-webkit-keyframes fade { from {opacity: 1;} to {opacity: 0;} }
+@-moz-keyframes    fade { from {opacity: 1;} to {opacity: 0;} }
+@-ms-keyframes     fade { from {opacity: 1;} to {opacity: 0;} }
+@-o-keyframes      fade { from {opacity: 1;} to {opacity: 0;} }
+@keyframes         fade { from {opacity: 1;} to {opacity: 0;} }
+
+.ff {background-position: center center; background-repeat: no-repeat; width: 100%; height: 100%; position: absolute; top: 0; left: 0; overflow: hidden}
+.loading-css {background-image:url(http://static1.dmcdn.net/images/black-loading.gif); background-color: #000}
+
+/* Android Loader */
+.android-loader-outer, .android-loader-inner, .android-loader:after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+/* Mask */
+ .android-loader:after {
+    content:" ";
+    margin: 10%;    /* stroke width */
+    border-radius: 100%;
+    background: none;    /* container background */
+}
+/* Spinning gradients */
+ .android-loader-outer, .android-loader-inner {
+    -webkit-animation-duration: 2s;
+    -moz-animation-duration: 2s;
+    -ms-animation-duration: 2s;
+    -o-animation-duration: 2s;
+    animation-duration: 2s;
+
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -ms-animation-iteration-count: infinite;
+    -o-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+
+    -webkit-animation-timing-function: linear;
+    -moz-animation-timing-function: linear;
+    -ms-animation-timing-function: linear;
+    -o-animation-timing-function: linear;
+    animation-timing-function: linear;
+
+    -webkit-mask-box-image: url(http://static1.dmcdn.net/images/black-circle.svg);
+    -moz-mask-box-image: url(http://static1.dmcdn.net/images/black-circle.svg);
+    -ms-mask-box-image: url(http://static1.dmcdn.net/images/black-circle.svg);
+    -o-mask-box-image: url(http://static1.dmcdn.net/images/black-circle.svg);
+    mask-box-image: url(http://static1.dmcdn.net/images/black-circle.svg);
+}
+.android-loader-outer {
+    -webkit-animation-name: rotate-outer;
+    -moz-animation-name: rotate-outer;
+    -ms-animation-name: rotate-outer;
+    -o-animation-name: rotate-outer;
+    animation-name: rotate-outer;
+}
+.android-loader-inner {
+    -webkit-animation-name: rotate-inner;
+    -moz-animation-name: rotate-inner;
+    -ms-animation-name: rotate-inner;
+    -o-animation-name: rotate-inner;
+    animation-name: rotate-inner;
+}
+/* Halfs */
+ .android-loader-outer:before, .android-loader-inner:before, .android-loader-outer:after, .android-loader-inner:after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    content:" ";
+}
+/* Left half */
+ .android-loader-outer:before, .android-loader-inner:before {
+    left: 0;
+    right: 50%;
+    border-radius: 72px 0 0 72px;    /* diameter */
+}
+/* Right half */
+ .android-loader-outer:after, .android-loader-inner:after {
+    left: 50%;
+    right: 0;
+    border-radius: 0 72px 72px 0;    /* diameter */
+}
+/* Half gradients */
+ .android-loader-outer:before {
+    background-image: -webkit-linear-gradient(top, hsla(0, 0%, 100%, 0.0), hsla(0, 0%, 100%, 0.5));
+    background-image: -moz-linear-gradient(top, hsla(0, 0%, 100%, 0.0), hsla(0, 0%, 100%, 0.5));
+    background-image: -ms-linear-gradient(top, hsla(0, 0%, 100%, 0.0), hsla(0, 0%, 100%, 0.5));
+    background-image: -o-linear-gradient(top, hsla(0, 0%, 100%, 0.0), hsla(0, 0%, 100%, 0.5));
+    background-image: linear-gradient(to bottom, hsla(0, 0%, 100%, 0.0), hsla(0, 0%, 100%, 0.5));
+}
+.android-loader-outer:after {
+    background-image: -webkit-linear-gradient(top, hsla(0, 0%, 100%, 1.0), hsla(0, 0%, 100%, 0.5));
+    background-image: -moz-linear-gradient(top, hsla(0, 0%, 100%, 1.0), hsla(0, 0%, 100%, 0.5));
+    background-image: -ms-linear-gradient(top, hsla(0, 0%, 100%, 1.0), hsla(0, 0%, 100%, 0.5));
+    background-image: -o-linear-gradient(top, hsla(0, 0%, 100%, 1.0), hsla(0, 0%, 100%, 0.5));
+    background-image: linear-gradient(to bottom, hsla(0, 0%, 100%, 1.0), hsla(0, 0%, 100%, 0.5));
+}
+.android-loader-inner:before {
+    background-image: -webkit-linear-gradient(top, hsla(0, 0%, 100%, 0.5), hsla(0, 0%, 75%, 0.5));
+    background-image: -moz-linear-gradient(top, hsla(0, 0%, 100%, 0.5), hsla(0, 0%, 75%, 0.5));
+    background-image: -ms-linear-gradient(top, hsla(0, 0%, 100%, 0.5), hsla(0, 0%, 75%, 0.5));
+    background-image: -o-linear-gradient(top, hsla(0, 0%, 100%, 0.5), hsla(0, 0%, 75%, 0.5));
+    background-image: linear-gradient(to bottom, hsla(0, 0%, 100%, 0.5), hsla(0, 0%, 75%, 0.5));
+}
+.android-loader-inner:after {
+    background-image: -webkit-linear-gradient(top, hsla(0, 0%, 50%, 0.5), hsla(0, 0%, 75%, 0.5));
+    background-image: -moz-linear-gradient(top, hsla(0, 0%, 50%, 0.5), hsla(0, 0%, 75%, 0.5));
+    background-image: -ms-linear-gradient(top, hsla(0, 0%, 50%, 0.5), hsla(0, 0%, 75%, 0.5));
+    background-image: -o-linear-gradient(top, hsla(0, 0%, 50%, 0.5), hsla(0, 0%, 75%, 0.5));
+    background-image: linear-gradient(to bottom, hsla(0, 0%, 50%, 0.5), hsla(0, 0%, 75%, 0.5));
+}
+/* Spinning animations */
+ @keyframes rotate-outer {
+    0% {
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(1080deg);
+        -moz-transform: rotate(1080deg);
+        transform: rotate(1080deg);
+    }
+}
+@-webkit-keyframes rotate-outer {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(1080deg);
+    }
+}
+@keyframes rotate-inner {
+    0% {
+        -webkit-transform: rotate(720deg);
+        -moz-transform: rotate(720deg);
+        transform: rotate(720deg);
+    }
+    100% {
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+}
+@-webkit-keyframes rotate-inner {
+    0% {
+        -webkit-transform: rotate(720deg);
+    }
+    100% {
+        -webkit-transform: rotate(0deg);
+    }
+}
+/* End Loader related CSS */
+    
+#startscreen .bar .background
+{
+    background-color: rgba(23,29,27,.25);
+}
+#controls .bar .background,
+#startscreen .bar.hover .background,
+#startscreen .bar:hover .background
+{
+    background-color: rgba(23,29,27,.6);
+}
+
+.bar .play .inner
+{
+    background-color: #171d1b;
+}
+.bar .play .inner .play-icon
+{
+    color: #f7fffd;
+}
+.bar .play:hover .inner .play-icon
+{
+    color: #ffcc33;
+}
+#player.started #controls .bar .play .inner .icon,
+#player.started #controls .bar .play .inner .icon2
+{
+    background-color: #f7fffd;
+}
+#player.started #controls .bar .play:hover .inner .icon,
+#player.started #controls .bar .play:hover .inner .icon2
+{
+    background-color: #ffcc33;
+}
+
+#startscreen .info div,
+#startscreen .info a
+{
+    color: #f7fffd;
+}
+#startscreen .info a:hover
+{
+    color: #ffcc33;
+}
+
+.bar .progress-bar .progress
+{
+    background-color: #ffcc33;
+    border-color: #ffcc33
+}
+.bar .progress-bar .buffer
+{
+    background-color: rgba(247,255,253, 0.3);
+}
+.bar .progress-bar .handle .inner
+{
+    border-color: #f7fffd;
+    border-top-color: #f7fffd;
+    border-left-color: #c5cdcb;
+    border-right-color: #c5cdcb;
+    border-bottom-color: #939b99;
+    background-color: #f7fffd;
+    background: -webkit-gradient(radial, 10 12, 6, 10 12, 12, from(rgba(0,0,0,0)), to(rgba(0,0,0,0.2))) #f7fffd; /* old webkit syntax */
+    background: -webkit-radial-gradient(10px 12px, circle, rgba(0,0,0,0) 6px, rgba(0,0,0,0.2) 12px) #f7fffd; /* standard compliant webkit */
+    background: -moz-radial-gradient(10px 12px, circle, rgba(0,0,0,0) 6px, rgba(0,0,0,0.2) 12px) #f7fffd; /* standard compliant moz */
+    background: radial-gradient(10px 12px, circle, rgba(0,0,0,0) 6px, rgba(0,0,0,0.2) 12px) #f7fffd; /* standard */
+}
+
+#controls .bar .progress-bar .handle-hole
+{
+    background-color: #ffcc33;
+}
+
+#controls .bar .progress-bar .indicator .inner
+{
+    background-color: #171d1b;
+    color: #f7fffd;
+}
+#controls .bar .progress-bar .indicator .inner .arrow
+{
+    border-top-color: #171d1b !important;
+}
+
+/* Geo-locked error message override */
+#error .error-DM007 a
+{
+    color: #ffcc33;
+}
+
+.bar .duration
+{
+    color: #f7fffd;
+}
+
+.btn
+{
+  color: #f7fffd;
+  background: rgba(23,29,27, 0.4);
+}
+.btn-selected,
+.no-touch .btn:hover, .no-touch .btn:focus, .no-touch .btn:active
+{
+  color: #ffcc33;
+  background: rgba(23,29,27, 0.7);
+}
+    /* Custom Font Definition */
+@font-face {
+    font-family: 'Dailymotion';
+    src: url('http://static1.dmcdn.net/css/component/player/fonts/Dailymotion.eot');
+    src: url('http://static1.dmcdn.net/css/component/player/fonts/Dailymotion.eot?#iefix') format('embedded-opentype'),
+         url('http://static1.dmcdn.net/css/component/player/fonts/Dailymotion.woff') format('woff'),
+         url('http://static1.dmcdn.net/css/component/player/fonts/Dailymotion.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Fullscreen Button */
+.bar .fullscreen
+{
+   background-image: url(/images/playerhtml5/fullscreen_on.png);
+}
+.bar .fullscreen:hover
+{
+   background-image: url(/images/playerhtml5/fullscreen_off.png);
+}
+    </style>
+        <link rel="stylesheet" href="http://static1.dmcdn.net/css/component/player/player-87b36a9a.css">
+            <link rel="canonical" href="http://www.dailymotion.com/video/x284fl0_les-trucs-auxquels-on-pense-quand-on-court_fun">
+    </head>
+<body>
+    <script>
+    
+// requestAnimationFrame polyfill
+// see:
+// * http://my.opera.com/emoller/blog/2011/12/20/requestanimationframe-for-smart-er-animating
+// * http://paulirish.com/2011/requestanimationframe-for-smart-animating/
+(function() {
+    var lastTime = 0;
+    var vendors = ['ms', 'moz', 'webkit', 'o'];
+    for(var x = 0; x < vendors.length && !window.requestAnimationFrame; ++x) {
+        window.requestAnimationFrame = window[vendors[x]+'RequestAnimationFrame'];
+        window.cancelAnimationFrame = window[vendors[x]+
+          'CancelAnimationFrame'] || window[vendors[x]+
+          'CancelRequestAnimationFrame'];
+    }
+
+    if (!window.requestAnimationFrame)
+        window.requestAnimationFrame = function(callback, element) {
+            var currTime = new Date().getTime();
+            var timeToCall = Math.max(0, 16 - (currTime - lastTime));
+            var id = window.setTimeout(function() { callback(currTime + timeToCall); },
+              timeToCall);
+            lastTime = currTime + timeToCall;
+            return id;
+        };
+
+    if (!window.cancelAnimationFrame)
+        window.cancelAnimationFrame = function(id) {
+            clearTimeout(id);
+        };
+}());
+
+(function loaderClosure(global, forcedFallback){
+
+    // jshint eqnull:true
+    if (forcedFallback == null) forcedFallback = false;
+
+    var LOADER_ID = 'loader',
+        NB_BARS = 8,
+        ANGLE = 360 / NB_BARS,
+        STEPS = 1000 / NB_BARS, // 1sec animation
+        loader = document.getElementById(LOADER_ID);
+
+    // The loader needs to start as fast as possible
+    // => we don't want to wait for Modernizr to only check 2 properties
+    var m = (function modernizrLight()
+    {
+        var cssomPrefixes = ['Webkit','Moz', 'O', 'ms'];
+        var st = document.createElement('div').style;
+        var ua = navigator.userAgent;
+
+        function checkProp(property, prefixed)
+        {
+            var ucProp  = property.charAt(0).toUpperCase() + property.slice(1),
+                props   = (property + ' ' + cssomPrefixes.join(ucProp + ' ') + ucProp).split(' ');
+
+            for ( var i in props )
+            {
+                var prop = props[i];
+                if ( st[prop] !== undefined ) return prefixed === true ? prop : true;
+            }
+            return false;
+        }
+        return {
+            csstransforms: checkProp('transform'),
+            cssanimations: checkProp('animationName'),
+            cssmask: checkProp('mask'),
+            android: ua.indexOf('Android') !== -1,
+            chrome: ua.indexOf('Chrome') !== -1,
+            prefixed: function(prop)
+            {
+                return checkProp(prop, true);
+            }
+        };
+    })();
+
+    function getLoader()
+    {
+        if (!loader)
+        {
+            loader = document.createElement('div');
+            loader.id = LOADER_ID;
+            loader.className = 'loader';
+
+            // force fallback via query parameter
+            // see : DAILY-30716
+            if (forcedFallback)
+            {
+                loader.className = "loading-css ff";
+            }
+            // The following should be tested with (m.android && m.cssmask && m.cssanimations && m.csstransforms)
+            // but Android stock browser pass the test without handling css masks correctly (false positive)
+            // see : DAILY-30299
+            else if (m.chrome && m.android)
+            {
+                loader.className = loader.className + ' android-loader';
+
+                var outer = document.createElement('div');
+                outer.className = 'android-loader-outer';
+
+                var inner = document.createElement('div');
+                inner.className = 'android-loader-inner';
+
+                outer = loader.appendChild(outer);
+                inner = loader.appendChild(inner);
+            }
+            // fallback on iOS style loader
+            else if (m.csstransforms)
+            {
+                // Disabling CSS animation if not supported
+                // android stock browser support animation but doesn't renders correctly
+                // for now (Android 4.1.2)
+                var cssanimations = m.cssanimations && !m.android;
+
+                loader.className = loader.className + ' ios-loader';
+                var bars = [];
+                for (var i = NB_BARS - 1; i >= 0; i--)
+                {
+                    var bar = document.createElement('div'),
+                        s = bar.style;
+                    bar.className = 'ios-loader-bar';
+
+                    s[m.prefixed('transform')] = 'rotate(-' + (i * ANGLE) + 'deg) translate(0, -142%)';
+                    if (m.cssanimations)
+                    {
+                        s[m.prefixed('animation')] = (cssanimations ? 'fade ' : '') +
+                            '1s linear -'+Math.floor(i*1000/NB_BARS)/1000+'s infinite';
+                    }
+                    // console.log('building bar animation :', i, m.prefixed('animation'), s[m.prefixed('animation')]);
+                    loader.appendChild(bar);
+                    bars.unshift(bar);
+                }
+
+                // CSS animations support: nothing to do
+                // otherwise run requestAnimationFrame animation
+                if (!cssanimations)
+                {
+                    var lastStep = 0;
+                    loader.start = function()
+                    {
+                        loader.startTime = (window.performance && window.performance.now) ? performance.now() : // FF | Chrome
+                                           window.mozAnimationStartTime ? window.mozAnimationStartTime :        // old FF
+                                           Date.now();                                                          // Default
+
+                        return requestAnimationFrame(loader.update);
+                    };
+                    loader.stop = function()
+                    {
+                        cancelAnimationFrame(loader.animationId);
+                        delete loader.animationId;
+                    };
+                    loader.update = function(timestamp)
+                    {
+                        var progress = timestamp - loader.startTime;
+                        var step = Math.round(progress/STEPS)%NB_BARS;
+
+                        if (step != lastStep)
+                        {
+                            for (var i = 0; i < NB_BARS; i++) bars[i].style.opacity = (1 / ((i + step)%NB_BARS));
+                            lastStep = step;
+                        }
+                        loader.animationId = requestAnimationFrame(loader.update);
+                    };
+                }
+            }
+            else
+            {
+                loader.className = "loading-css ff";
+            }
+            document.body.appendChild(loader);
+        }
+        return loader;
+    }
+
+    global.startLoader = function()
+    {
+        loader = getLoader();
+        if (loader.start && !loader.animationId) loader.start();
+        loader.style.display = 'block';
+        loader.style['z-index'] = '500';
+    };
+    global.stopLoader = function()
+    {
+        if (!loader) return;
+
+        if (loader.stop && loader.animationId) loader.stop();
+        loader.style.display = 'none';
+        loader.style['z-index'] = '-1';
+    };
+})(window/* jshint ignore:start */
+,  false /* jshint ignore:end */);
+    startLoader();
+    ENV = 'prod';
+    </script><div id="loader" class="loader ios-loader" style="display: none; z-index: -1;"><div class="ios-loader-bar" style="transform: rotate(-315deg) translate(0px, -142%); -webkit-animation: fade 1s linear -0.875s infinite;"></div><div class="ios-loader-bar" style="transform: rotate(-270deg) translate(0px, -142%); -webkit-animation: fade 1s linear -0.75s infinite;"></div><div class="ios-loader-bar" style="transform: rotate(-225deg) translate(0px, -142%); -webkit-animation: fade 1s linear -0.625s infinite;"></div><div class="ios-loader-bar" style="transform: rotate(-180deg) translate(0px, -142%); -webkit-animation: fade 1s linear -0.5s infinite;"></div><div class="ios-loader-bar" style="transform: rotate(-135deg) translate(0px, -142%); -webkit-animation: fade 1s linear -0.375s infinite;"></div><div class="ios-loader-bar" style="transform: rotate(-90deg) translate(0px, -142%); -webkit-animation: fade 1s linear -0.25s infinite;"></div><div class="ios-loader-bar" style="transform: rotate(-45deg) translate(0px, -142%); -webkit-animation: fade 1s linear -0.125s infinite;"></div><div class="ios-loader-bar" style="transform: rotate(0deg) translate(0px, -142%); -webkit-animation: fade 1s linear 0s infinite;"></div></div>
+    <!--[if lte IE 10]>
+    <script src="http://static1.dmcdn.net/js/component/player/vendor/polyfill-c77bcd6a.js"></script>
+    <![endif]-->
+        <script src="player-9b1b98fe.js"></script>
+        <script src="jquery.min.js"></script>
+    <div id="player" class="min-width-160px min-width-250px min-width-350px paused"><div class="ff"><img id="thumb" style="position: absolute; display: block; width: auto; opacity: 1; top: 0px; left: -0.5px; height: 100%;" src="HgpOR.jpg"></div><div id="startscreen" class="ff"><div class="bar"><div class="background"><div class="play button"><div class="inner"><div class="play-icon">►</div><div class="icon"></div></div></div><div class="info"><div class="title"><a href="http://www.dailymotion.com/video/x284fl0_les-trucs-auxquels-on-pense-quand-on-court_fun#from=embediframe" target="_top">Les trucs auxquels on pense quand on court</a></div><div class="owner"><a href="http://www.dailymotion.com/topito#from=embediframe" target="_top">topito</a></div><div class="duration">03:13</div></div></div></div><img class="logo" width="97" height="16" src="logo.svg"></div></div>
+    <div id="out"></div>
+    <script>
+    try
+    {
+        
+        var info = {"access_error":null,"ads":true,"advertising_content":false,"audience_url":null,"available_formats":["l1","l2","ld","sd","hq","hd720","hd1080"],"channel":"fun","created_time":1413563059,"duration":193,"embed_url":"http:\/\/www.dailymotion.com\/embed\/video\/x284fl0","explicit":false,"id":"x284fl0","isrc":null,"language":"fr","mode":"vod","onair":false,"owner.analytics_services":[],"owner.id":"x1a2sn6","owner.parent":null,"owner.screenname":"topito","owner.type":"official","owner.url":"http:\/\/www.dailymotion.com\/topito","owner.username":"topito","paywall":false,"private":false,"sharing_urls":{"facebookURL":"http:\/\/www.dailymotion.com\/sharer?vid=x284fl0&uid=&service=facebook&redirect=https%3A%2F%2Fwww.facebook.com%2Fsharer%2Fsharer.php%3Fu%3Dhttp%253A%252F%252Fwww.dailymotion.com%252Fvideo%252Fx284fl0_les-trucs-auxquels-on-pense-quand-on-court_fun","twitterURL":"http:\/\/www.dailymotion.com\/sharer?vid=x284fl0&uid=&service=twitter&redirect=https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Ftext%3DLes%2Btrucs%2Bauxquels%2Bon%2Bpense%2Bquand%2Bon%2Bcourt%2Bpar%2B%2540topito_com%2B-%26url%3Dhttp%253A%252F%252Fwww.dailymotion.com%252Fvideo%252Fx284fl0_les-trucs-auxquels-on-pense-quand-on-court_fun%26via%3DDailymotion"},"stream_audio_url":null,"stream_h264_hd1080_url":"http:\/\/www.dailymotion.com\/cdn\/H264-1920x1080\/video\/x284fl0.mp4?auth=1415365086-2562-p7nlz08z-faaf7690d8008846601bb158922920f5","stream_h264_hd_url":"http:\/\/www.dailymotion.com\/cdn\/H264-1280x720\/video\/x284fl0.mp4?auth=1415365086-2562-72s6t3li-79f6b0fcdc1b3cd6012d87dbecfa0243","stream_h264_hq_url":"http:\/\/www.dailymotion.com\/cdn\/H264-848x480\/video\/x284fl0.mp4?auth=1415365086-2562-rkuey0po-b8253242c8408df0ce649d12eb90b2e5","stream_h264_ld_url":"http:\/\/www.dailymotion.com\/cdn\/H264-320x240\/video\/x284fl0.mp4?auth=1415365086-2562-nkffmei1-5d9b79c6a9f3d97fb3707df78f10784b","stream_h264_url":"http:\/\/www.dailymotion.com\/cdn\/H264-512x384\/video\/x284fl0.mp4?auth=1415365086-2562-cwc1nbrk-96f3d8398d9cfab682de6bdec61c55aa","stream_hls_url":"http:\/\/www.dailymotion.com\/cdn\/manifest\/video\/x284fl0.m3u8?auth=1415365086-2562-3ahn3twl-98b6c3a0f81541f32ef9a32c8781de65","stream_live_hls_url":null,"studio":false,"swf_url":"http:\/\/www.dailymotion.com\/swf\/video\/x284fl0","tags":["Jogging","course","penser","pens\u00e9e","humour","courir","loisir","topito"],"thumbnail_120_url":"http:\/\/s1.dmcdn.net\/HgpOR\/x120--yo.jpg","thumbnail_240_url":"http:\/\/s1.dmcdn.net\/HgpOR\/x240-Dpr.jpg","thumbnail_url":"http:\/\/s1.dmcdn.net\/HgpOR.jpg","title":"Les trucs auxquels on pense quand on court","type":"official","url":"http:\/\/www.dailymotion.com\/video\/x284fl0_les-trucs-auxquels-on-pense-quand-on-court_fun","advertising":{"status":"ok","type":"sdk\/liverail","ac_token":1415192286,"params":{"LR_PUBLISHER_ID":21292,"LR_TITLE":"Les trucs auxquels on pense quand on court","LR_VIDEO_ID":134576100,"LR_VIDEO_URL":"http:\/\/www.dailymotion.com\/video\/x284fl0","LR_DM_TAGS":"Jogging,course,penser,pens\u00e9e,humour,courir,loisir,topito","LR_VERTICALS":"fun","LR_VIDEO_AMID":77392770,"LR_VIDEO_DURATION":193,"LR_TAGS":"VTYPE_official,SMODE_vod,LANG_fr,PAGE_external,PTYPE_web,VDUR_short","LR_DM_VTYPE":"official","LR_DM_SMODE":"vod","LR_DM_LANG":"fr","LR_DM_VDUR":"short","LR_DM_PAGE":"external","LR_DM_PTYPE":"web","LR_ALLOWDUPLICATES":1,"LR_DESCRIPTION":"entertainment.dailymotion.com","LR_URL":"http:\/\/www.topito.com\/top-tweets-rire-semaine-45","LR_LAYOUT_SKIN_ID":0,"LR_DM_NEXTPERF_OVERLAY_ZID":"28906","LR_DM_ADTV_CATEGORIES":"Arts & Entertainment","LR_DM_SMARTCLIP_CATEGORIES":"Entertainment"},"timeouts":{"load":3000,"global":10000}},"log_external_view_urls":{"vs":"http:\/\/www.dailymotion.com\/sense\/images\/vs\/tag.gif","comscore":"http:\/\/b.scorecardresearch.com\/b?c1=1&c2=4000005&c3=4000005&c4=800000&c5=020201&c6=x284fl0","mediametrie":"http:\/\/prof.estat.com\/m\/web\/219019208588?n=8012301&v=3.2&r=http%3A%2F%2Fwww.topito.com%2Ftop-tweets-rire-semaine-45&dom=www.dailymotion.com","internal":"http:\/\/www.dailymotion.com\/logger\/video\/access\/x284fl0?session_id=&referer=http%3A%2F%2Fwww.topito.com%2Ftop-tweets-rire-semaine-45&country=FR&user_agent=Mozilla%2F5.0+%28Macintosh%3B+Intel+Mac+OS+X+10_9_4%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F38.0.2125.111+Safari%2F537.36&blog_key=&key=5i8gszjzeo187hqatnekpoo&v=545a4908&i=9f543665&h=6b2a76d92635b8ee8fe05141c9627a0b","loggerv3":"http:\/\/logger-02.vty.dailymotion.com\/dm\/desktop-macos\/embed_player\/u\/play?country=FR&pid=545a1eded0e73&vl=fr-fr&sv=fr&video_id=134576100&channel_id=26&class=official&mode=vod&owner_id=77392770&r=http%3A%2F%2Fwww.topito.com%2Ftop-tweets-rire-semaine-45&s=db8d1eebace29630195e95118cd358d2187hqatnekpoo","progress@\/10%":"http:\/\/logger-02.vty.dailymotion.com\/dm\/desktop-macos\/embed_player\/a\/progress?country=FR&pid=545a1eded0e73&vl=fr-fr&sv=fr&video_id=134576100&channel_id=26&class=official&mode=vod&owner_id=77392770&r=http%3A%2F%2Fwww.topito.com%2Ftop-tweets-rire-semaine-45&pos=%position%&time=%time%&length=193","history":"http:\/\/www.dailymotion.com\/history\/log\/user\/topito\/video\/x284fl0?action=start&","history@80%|10m":"http:\/\/www.dailymotion.com\/history\/log\/user\/topito\/video\/x284fl0?action=complete&","behavior@40%|3m":"http:\/\/www.dailymotion.com\/behavior\/%session%\/x284fl0?"}},
+            fields = "access_error,ads,advertising_content,audience_url,available_formats,channel,created_time,duration,embed_url,explicit,id,isrc,language,mode,onair,owner.analytics_services,owner.id,owner.parent,owner.screenname,owner.type,owner.url,owner.username,paywall,private,sharing_urls,stream_audio_url,stream_h264_hd1080_url,stream_h264_hd_url,stream_h264_hq_url,stream_h264_ld_url,stream_h264_url,stream_hls_url,stream_live_hls_url,studio,swf_url,tags,thumbnail_120_url,thumbnail_240_url,thumbnail_url,title,type,url,advertising,log_external_view_urls";
+
+                    var internalPlugins = {
+                'related' : [
+                    'http://static1.dmcdn.net/js/component/player/player_related-e077df1f.js',
+                    'http://static1.dmcdn.net/css/component/player/player_related-5fcd2ec0.css'
+                ],
+                'hashchange' : 'http://static1.dmcdn.net/js/component/player/vendor/jquery-hashchange-752f3db1.js',
+                'gestures'   : 'http://static1.dmcdn.net/js/component/player/vendor/jquery-gestures-ff339322.js',
+                'audience'   : 'http://static1.dmcdn.net/js/component/player/vendor/jquery-audience-7238a38a.js',
+                's_code'     : 'http://static1.dmcdn.net/js/component/player/vendor/dailymotion_scode_mobile-cd1da98c.js',
+                'xiti'       : 'http://static1.dmcdn.net/js/component/player/vendor/ATPlugDM-f12e8116.js',
+                'estat'      : 'http://static1.dmcdn.net/js/component/player/vendor/mu_4.0.36-af59da88.js'
+            };
+            var plugins = {"hapyak":"\/\/hapyak.dmcdn.net\/js\/hapyak.js"};
+            $.extend(plugins, internalPlugins)
+            DM.config('plugins', plugins);
+        
+        DM.config('assets',  {"logo_svg":"http:\/\/static1.dmcdn.net\/images\/logo.svg","logo_png":"http:\/\/static1.dmcdn.net\/images\/logo_player_60.png","liveshow_logo_svg":"http:\/\/static1.dmcdn.net\/images\/logo_liveshow.svg","loadingImg":"http:\/\/static1.dmcdn.net\/images\/black-loading.gif","circleSVG":"http:\/\/static1.dmcdn.net\/images\/black-circle.svg","font_eot":"\/css\/fonts\/Dailymotion.eot","font_woff":"\/css\/fonts\/Dailymotion.woff","font_ttf":"\/css\/fonts\/Dailymotion.ttf","fullscreen_on":"\/images\/playerhtml5\/fullscreen_on.png","fullscreen_off":"\/images\/playerhtml5\/fullscreen_off.png"});
+        DM.config('options', {"referer":"http:\/\/www.topito.com\/top-tweets-rire-semaine-45","ip":"159.84.54.101","is_secure":false,"http_x_requested_with":"","device_type":"desktop","cookie_root_domain":".dailymotion.com","s_server_time":"13:58-Wednesday","env":"prod","userEnv":{"version":"fr","cc":"FR","as":"AS2200"},"sdk_liverail":{"swf":"http:\/\/vox-static.liverail.com\/swf\/v4\/admanager.swf","js":"http:\/\/cdn-static.liverail.com\/js\/LiveRail.AdManager-1.0.js"},"is_partner_player":false,"ui":{"background":"171d1b","foreground":"f7fffd","highlight":"ffcc33","foregroundRGB":"247,255,253","backgroundRGB":"23,29,27","foregroundDark1":"c5cdcb","foregroundDark2":"939b99"},"hls_default_quality":380,"gifloader":false});
+        DM.config('labels',  {"flash_warning":["Vous devez mettre \u00e0 jour la version de votre Adobe Flash Player pour regarder cette vid\u00e9o.","<a href=\"http:\/\/get.adobe.com\/flashplayer\/\" target=\"_blank\">T\u00e9l\u00e9chargez-le sur Adobe<\/a>"],"partner_player_warning":["Vid\u00e9o non disponible","Cette vid\u00e9o n'a pas \u00e9t\u00e9 mise \u00e0 disposition sur votre appareil par le propri\u00e9taire."],"ads":{"video-countdown":"Publicit\u00e9 - Votre vid\u00e9o dans %d secondes","close":"Fermer","instreamErrorMessage":"D\u00e9sol\u00e9, il semble y avoir un probl\u00e8me. Nous travaillons pour le r\u00e9soudre au plus vite.","instreamErrorPlay":"Cliquer ici pour visionner la vid\u00e9o"},"load_error":["D\u00e9sol\u00e9, un probl\u00e8me est survenu...","Rafraichissez cette page ou r\u00e9essayez plus tard."]});
+        
+        window.player = new DailymotionPlayer(info, $('#player'), fields);
+
+    }
+    catch (e)
+    {
+        if (console) console.error(e.stack);
+        document.write(
+            '<div class="load-error-container">' +
+                '<div class="load-error-content">' +
+                    '<h2>Désolé, un problème est survenu...</h2>' +
+                    '<p>Rafraichissez cette page ou réessayez plus tard.</p>' +
+                '</div>' +
+            '</div>');
+        window.stopLoader();
+                (new Image).src = 'http://www.dailymotion.com/track/html.startupfail';
+            }
+    </script>
+
+
+</body></html>

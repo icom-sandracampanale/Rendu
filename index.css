@@ -1,0 +1,166 @@
+.img-responsive{
+	width:100%;
+	height:auto;
+	margin:0px auto;
+}
+
+img#video {
+	width:50px;
+	float:left;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+img#first
+{
+	width:50px;
+	float:left;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+img#life
+{
+	width:50px;
+	float:left;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+img#tweet{
+	width:350px;
+	float:left;
+	margin-left: 0px;
+	margin-right: auto;
+}
+
+#imgbas{
+	width:40px;
+}
+
+/* latin */
+@font-face {
+  font-family: 'Josefin Slab';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Josefin Slab'), local('JosefinSlab'), url(46aYWdgz-1oFX11flmyEfRVuXpl7XtNjpLlhhhGlVqc.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+.Menu li {
+	float:left;
+	list-style-type: none;
+	vertical-align:center;
+	margin: 1% 1% 1% 2% ;
+	font-size: 90%;
+	text-align: center;
+	font-family: 'Josefin Slab';
+}
+	
+a{
+	color:#000000;
+	text-decoration:none;
+}
+
+body{
+	color:#000000;
+	text-decoration:none;
+	font-size: 90%;
+	font-family: 'Josefin Slab';
+}
+
+#useful li {
+	list-style-type:none;
+	vertical-align:center;
+}
+
+#picture li {
+	list-style-type:none;
+	vertical-align:center;
+}
+
+.trucs	h2, .trucs p {
+	background-color:#990000;
+	padding-right: 10px;
+	padding-left: 10px;
+	margin: 0px;
+	color:white;
+
+}
+
+.trucs {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+#boutons {
+	float:left;
+	text-align: center;
+
+}
+
+#wrapper   {
+	margin: 0px auto;
+	width:1200px;
+}
+
+#slider {
+	margin-left: auto;
+    margin-right: auto;
+    width:100%;
+}
+
+.colonne{
+    box-sizing: border-box;
+	width:31.3333333333333333333333333333333333%;
+	float:left;
+	border:1px solid;
+	padding-right: 10px;
+	padding-left:10px;
+	margin: 2% 1%;
+}
+
+.footer-col{
+	box-sizing: border-box;
+	float:left;
+	width:31.3333333333333333333333333333333333%;
+	float:left;
+	border:1px solid;
+	padding-right: 10px;
+	padding-left:10px;
+	margin :2% 1%;
+}
+
+
+.clearfix:before,
+.clearfix:after{
+	display:table;
+	content:" ";
+}
+.clearfix:after{
+	clear:both;
+}
+
+#footer-bottom {
+	background-color:black;
+	width:100%;
+	color:white;
+	padding-left: 1%;
+}
+
+@media screen and (max-width: 992px){
+	.colonne-tablet-6{
+		width:50%;
+	}
+	.colonne-tablet-12{
+		width:100%;
+	}
+}
+@media screen and (max-width: 768px){
+	.colonne-mob-6{
+		width:50%;
+	}
+	.colonne-mob-12{
+		width:100%;
+	}
+}
